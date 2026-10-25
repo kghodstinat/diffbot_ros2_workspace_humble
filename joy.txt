@@ -1,0 +1,26 @@
+1. Install
+
+
+sudo apt install ros-humble-joy ros-humble-teleop-twist-joy joystick
+2. Check that Linux sees the controller
+
+
+ls /dev/input/js*            # should show js0
+jstest /dev/input/js0        # move sticks/press buttons; Ctrl+C to quit
+3. Check permissions. If you get "Permission denied", add yourself to the input group:
+
+
+sudo usermod -aG input $USER   # then log out and back in
+4. Find the controller's ID number in ROS
+
+
+ros2 run joy joy_enumerate_devices
+5. Test the joy node. Run each command in its own terminal:
+
+
+ros2 run joy joy_node --ros-args -p device_id:=0
+ros2 topic echo /joy          # values change when you press buttons
+6. Drive the robot. This replaces keyboard teleop:
+
+
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
