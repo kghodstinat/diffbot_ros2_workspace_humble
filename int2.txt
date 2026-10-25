@@ -1,0 +1,14 @@
+Pi:
+ros2 launch diffbot_pi robot.launch.py slam:=true nav2:=true sonar:=false
+
+
+Computer:
+# 1. View
+LIBGL_ALWAYS_SOFTWARE=1 rviz2 -d /opt/ros/humble/share/nav2_bringup/rviz/nav2_default_view.rviz
+
+# 2. Drive to build the map (keys i j l , ; z = slower)
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+# 3. Save the map when done
+ros2 run nav2_map_server map_saver_cli -f ~/my_map
+

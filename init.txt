@@ -19,3 +19,9 @@ colcon build --symlink-install
 source install/setup.bash
 
 ros2 launch diffbot_pi robot.launch.py
+
+------------------------
+ros2 launch diffbot_pi robot.launch.py \
+  slam:=true \
+  nav2:=true \
+  sonar:=false
