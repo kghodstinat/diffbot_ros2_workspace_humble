@@ -3,13 +3,13 @@
 Converted from uploaded `Ros2Scripts.zip` and informed by `turtlebot3_core.zip`.
 
 ## Status
-**Starter implementation; NOT tested on your hardware.** Motors are disabled by default. Includes GPIO DC motor control, quadrature encoder counting, PID wheel speed control, odometry/TF, joint states, optional ultrasonic node, URDF, optional SLAM Toolbox and Nav2 launch hooks. No LiDAR driver is bundled because LiDAR model is unknown. Nav2 configuration and map/localization must be completed before autonomous use.
+**Starter implementation; NOT tested on your hardware.** Motors are disabled by default. Includes GPIO DC motor control, quadrature encoder counting, PID wheel speed control, odometry/TF, joint states, optional ultrasonic node, URDF, optional SLAM Toolbox and Nav2 launch hooks. Includes RPLIDAR support via `rplidar_ros`. Nav2 configuration and map/localization must be completed before autonomous use.
 
 ## Install (Ubuntu 24.04 64-bit, ROS 2 Humble installed)
 
 ```bash
 sudo apt update
-sudo apt install python3-colcon-common-extensions python3-gpiozero python3-lgpio ros-humble-robot-state-publisher ros-humble-slam-toolbox ros-humble-navigation2 ros-humble-nav2-bringup
+sudo apt install python3-colcon-common-extensions python3-gpiozero python3-lgpio ros-humble-robot-state-publisher ros-humble-slam-toolbox ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-rplidar-ros
 # from this workspace directory:
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install
@@ -41,7 +41,13 @@ The command timeout is 0.5 s, so a single velocity command stops quickly. For su
 
 ## SLAM / Nav2 / LiDAR
 
-- LiDAR driver is **not included**. Install the driver for your eventual model, publishing `sensor_msgs/LaserScan` on `/scan` with a matching frame (default URDF placeholder `laser`). Verify scan orientation and frame transform.
+- **RPLIDAR** is started by default (`lidar:=false` to disable) via `rplidar_ros`, publishing `sensor_msgs/LaserScan` on `/scan` in frame `laser`.
+  1. `sudo apt install ros-humble-rplidar-ros`
+  2. Set `serial_baudrate` in the `rplidar` section of `config/robot.yaml` for your model (A1/A2M8: 115200, A2M12/A3/S1: 256000, C1: 460800, S2: 1000000).
+  3. Stable device name: `sudo cp src/diffbot_pi/udev/99-rplidar.rules /etc/udev/rules.d/ && sudo udevadm control --reload-rules && sudo udevadm trigger`, then replug. This creates `/dev/rplidar`. Without it, set `serial_port: /dev/ttyUSB0` and add your user to `dialout`.
+  4. Measure the lidar mount and update `laser_joint` origin in `urdf/robot.urdf`. In RViz (Fixed Frame `base_link`), an object in front of the robot must appear at +x; if it appears behind, set the `laser_joint` yaw to `3.14159`.
+  5. Test: `ros2 launch diffbot_pi robot.launch.py` then `ros2 topic hz /scan`.
+- SLAM uses `config/slam.yaml` (`base_frame: base_link`, matching this robot's TF tree).
 - SLAM launch hook: `ros2 launch diffbot_pi robot.launch.py slam:=true` **only after LiDAR and calibrated odometry**. SLAM Toolbox publishes `map -> odom`.
 - Nav2 hook: `ros2 launch diffbot_pi robot.launch.py nav2:=true` **not turnkey**. Nav2 needs a properly configured costmap/footprint, planner/controller, robot limits, and either SLAM (`map -> odom`) or a saved map + localization. Nav2's standard default configuration may not match this robot. Do not enable navigation until validated.
 - Run RViz2 on a separate workstation. URDF dimensions/laser pose are illustrative and must be measured.

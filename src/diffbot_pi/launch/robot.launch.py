@@ -13,6 +13,7 @@ def generate_launch_description():
     share = get_package_share_directory("diffbot_pi")
     cfg = os.path.join(share, "config", "robot.yaml")
     urdf = os.path.join(share, "urdf", "robot.urdf")
+    slam_cfg = os.path.join(share, "config", "slam.yaml")
 
     slam_share = get_package_share_directory("slam_toolbox")
     nav_share = get_package_share_directory("nav2_bringup")
@@ -24,6 +25,7 @@ def generate_launch_description():
         DeclareLaunchArgument("slam", default_value="false"),
         DeclareLaunchArgument("nav2", default_value="false"),
         DeclareLaunchArgument("sonar", default_value="false"),
+        DeclareLaunchArgument("lidar", default_value="true"),
         DeclareLaunchArgument("map", default_value=""),
 
         Node(
@@ -44,6 +46,15 @@ def generate_launch_description():
         ),
 
         Node(
+            package="rplidar_ros",
+            executable="rplidar_node",
+            name="rplidar",
+            parameters=[cfg],
+            condition=IfCondition(LaunchConfiguration("lidar")),
+            output="screen",
+        ),
+
+        Node(
             package="robot_state_publisher",
             executable="robot_state_publisher",
             parameters=[{"robot_description": robot_description}],
@@ -53,6 +64,7 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 os.path.join(slam_share, "launch", "online_async_launch.py")
             ),
+            launch_arguments={"slam_params_file": slam_cfg}.items(),
             condition=IfCondition(LaunchConfiguration("slam")),
         ),
 

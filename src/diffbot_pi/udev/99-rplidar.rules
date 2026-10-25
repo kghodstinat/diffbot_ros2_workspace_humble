@@ -1,0 +1,3 @@
+# RPLIDAR (Silicon Labs CP210x USB-UART) -> /dev/rplidar
+# Install: sudo cp 99-rplidar.rules /etc/udev/rules.d/ && sudo udevadm control --reload-rules && sudo udevadm trigger
+KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0666", SYMLINK+="rplidar"
