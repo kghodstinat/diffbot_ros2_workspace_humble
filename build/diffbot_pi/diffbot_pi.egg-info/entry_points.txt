@@ -1,0 +1,4 @@
+[console_scripts]
+base_controller = diffbot_pi.base_controller:main
+sonar = diffbot_pi.sonar:main
+

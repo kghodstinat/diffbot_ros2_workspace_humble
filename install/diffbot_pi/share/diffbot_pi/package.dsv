@@ -1,0 +1,9 @@
+source;share/diffbot_pi/hook/pythonpath.ps1
+source;share/diffbot_pi/hook/pythonpath.dsv
+source;share/diffbot_pi/hook/pythonpath.sh
+source;share/diffbot_pi/hook/ament_prefix_path.ps1
+source;share/diffbot_pi/hook/ament_prefix_path.dsv
+source;share/diffbot_pi/hook/ament_prefix_path.sh
+source;../../build/diffbot_pi/share/diffbot_pi/hook/pythonpath_develop.ps1
+source;../../build/diffbot_pi/share/diffbot_pi/hook/pythonpath_develop.dsv
+source;../../build/diffbot_pi/share/diffbot_pi/hook/pythonpath_develop.sh

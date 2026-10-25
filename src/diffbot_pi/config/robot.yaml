@@ -1,0 +1,32 @@
+base_controller:
+  ros__parameters:
+    enable_motors: true  # SAFETY: set true ONLY after wiring, polarity, encoder tests
+    right_a: 24
+    right_b: 23
+    right_pwm: 25
+    left_a: 15
+    left_b: 14
+    left_pwm: 4
+    left_enc_a: 17
+    left_enc_b: 27
+    right_enc_a: 5
+    right_enc_b: 6
+    ticks_per_meter: 5000.0  # PLACEHOLDER: calibrate measured wheel travel
+    wheel_separation: 0.245  # PLACEHOLDER: measure wheel center spacing
+    wheel_radius: 0.033  # PLACEHOLDER: measure wheel radius
+    max_wheel_speed: 0.35
+    cmd_timeout: 0.5
+    control_hz: 20.0
+    kp: 0.8
+    ki: 0.2
+    feedforward: 0.65
+    left_encoder_sign: 1
+    right_encoder_sign: 1
+    left_motor_sign: 1
+    right_motor_sign: 1
+sonar:
+  ros__parameters:
+    enabled: true  # GPIO 22/26 are SUGGESTIONS, not verified wiring
+    trigger_pin: 22
+    echo_pin: 26
+    max_distance: 3.0

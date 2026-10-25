@@ -1,0 +1,29 @@
+running develop
+running egg_info
+creating diffbot_pi.egg-info
+writing diffbot_pi.egg-info/PKG-INFO
+writing dependency_links to diffbot_pi.egg-info/dependency_links.txt
+writing entry points to diffbot_pi.egg-info/entry_points.txt
+writing requirements to diffbot_pi.egg-info/requires.txt
+writing top-level names to diffbot_pi.egg-info/top_level.txt
+writing manifest file 'diffbot_pi.egg-info/SOURCES.txt'
+reading manifest file 'diffbot_pi.egg-info/SOURCES.txt'
+writing manifest file 'diffbot_pi.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/python3.10/site-packages/diffbot-pi.egg-link (link to .)
+Installing base_controller script to /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/diffbot_pi
+Installing sonar script to /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/diffbot_pi
+
+Installed /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi
+running symlink_data
+creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index
+creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index
+creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index/packages
+symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/resource/diffbot_pi -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index/packages
+symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/package.xml -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi
+creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/launch
+symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/launch/robot.launch.py -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/launch
+creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/config
+symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/config/robot.yaml -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/config
+creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/urdf
+symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/urdf/robot.urdf -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/urdf

@@ -1,0 +1,31 @@
+[3.089s] Invoking command in '/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi': PYTHONPATH=/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/build --no-deps symlink_data
+[4.376s] running develop
+[5.150s] running egg_info
+[5.151s] creating diffbot_pi.egg-info
+[5.152s] writing diffbot_pi.egg-info/PKG-INFO
+[5.152s] writing dependency_links to diffbot_pi.egg-info/dependency_links.txt
+[5.153s] writing entry points to diffbot_pi.egg-info/entry_points.txt
+[5.154s] writing requirements to diffbot_pi.egg-info/requires.txt
+[5.154s] writing top-level names to diffbot_pi.egg-info/top_level.txt
+[5.155s] writing manifest file 'diffbot_pi.egg-info/SOURCES.txt'
+[5.163s] reading manifest file 'diffbot_pi.egg-info/SOURCES.txt'
+[5.166s] writing manifest file 'diffbot_pi.egg-info/SOURCES.txt'
+[5.173s] running build_ext
+[5.174s] Creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/python3.10/site-packages/diffbot-pi.egg-link (link to .)
+[5.177s] Installing base_controller script to /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/diffbot_pi
+[5.178s] Installing sonar script to /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/diffbot_pi
+[5.179s] 
+[5.180s] Installed /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi
+[5.180s] running symlink_data
+[5.181s] creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index
+[5.181s] creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index
+[5.182s] creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index/packages
+[5.182s] symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/resource/diffbot_pi -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index/packages
+[5.183s] symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/package.xml -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi
+[5.183s] creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/launch
+[5.184s] symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/launch/robot.launch.py -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/launch
+[5.184s] creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/config
+[5.185s] symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/config/robot.yaml -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/config
+[5.186s] creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/urdf
+[5.186s] symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/urdf/robot.urdf -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/urdf
+[5.313s] Invoked command in '/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi' returned '0': PYTHONPATH=/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/build --no-deps symlink_data

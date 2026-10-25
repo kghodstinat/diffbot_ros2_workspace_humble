@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.001395] (diffbot_pi) JobQueued: {'identifier': 'diffbot_pi', 'dependencies': OrderedDict()}
+[0.001831] (diffbot_pi) JobStarted: {'identifier': 'diffbot_pi'}
+[0.097950] (-) TimerEvent: {}
+[0.198587] (-) TimerEvent: {}
+[0.299250] (-) TimerEvent: {}
+[0.399927] (-) TimerEvent: {}
+[0.500560] (-) TimerEvent: {}
+[0.601202] (-) TimerEvent: {}
+[0.701805] (-) TimerEvent: {}
+[0.802396] (-) TimerEvent: {}
+[0.902992] (-) TimerEvent: {}
+[1.003589] (-) TimerEvent: {}
+[1.104229] (-) TimerEvent: {}
+[1.204875] (-) TimerEvent: {}
+[1.305589] (-) TimerEvent: {}
+[1.406551] (-) TimerEvent: {}
+[1.507174] (-) TimerEvent: {}
+[1.607817] (-) TimerEvent: {}
+[1.708462] (-) TimerEvent: {}
+[1.809195] (-) TimerEvent: {}
+[1.909820] (-) TimerEvent: {}
+[2.010498] (-) TimerEvent: {}
+[2.111109] (-) TimerEvent: {}
+[2.211698] (-) TimerEvent: {}
+[2.312291] (-) TimerEvent: {}
+[2.412939] (-) TimerEvent: {}
+[2.513527] (-) TimerEvent: {}
+[2.614132] (-) TimerEvent: {}
+[2.714727] (-) TimerEvent: {}
+[2.815340] (-) TimerEvent: {}
+[2.915945] (-) TimerEvent: {}
+[3.016708] (-) TimerEvent: {}
+[3.087808] (diffbot_pi) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/build', '--no-deps', 'symlink_data'], 'cwd': '/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kaveh', 'SSH_CLIENT': '192.168.86.21 57874 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/kaveh', 'OLDPWD': '/home/kaveh', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/kaveh/diffbot_ros2_workspace_humble/install:/home/kaveh/ros2_ws/install:/home/kaveh/turtlebot3_ws/install:/home/kaveh/diffbot_ros2_workspace_humble2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'kaveh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/home/kaveh/diffbot_ros2_workspace_humble2/install/diffbot_pi:/home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi:/home/kaveh/ros2_ws/install/rplidar_ros:/home/kaveh/ros2_ws/install/diff_drive_robot:/home/kaveh/turtlebot3_ws/install/turtlebot3:/home/kaveh/turtlebot3_ws/install/turtlebot3_teleop:/home/kaveh/turtlebot3_ws/install/turtlebot3_bringup:/home/kaveh/turtlebot3_ws/install/turtlebot3_node:/home/kaveh/turtlebot3_ws/install/turtlebot3_example:/home/kaveh/turtlebot3_ws/install/turtlebot3_description:/home/kaveh/turtlebot3_ws/install/ld08_driver:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.86.21 57874 192.168.86.195 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/python3.10/site-packages:/home/kaveh/diffbot_ros2_workspace_humble2/build/diffbot_pi:/home/kaveh/diffbot_ros2_workspace_humble2/install/diffbot_pi/lib/python3.10/site-packages:/home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi:/home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/python3.10/site-packages:/home/kaveh/ros2_ws/build/diff_drive_robot:/home/kaveh/ros2_ws/install/diff_drive_robot/lib/python3.10/site-packages:/home/kaveh/turtlebot3_ws/build/turtlebot3_teleop:/home/kaveh/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/kaveh/turtlebot3_ws/build/turtlebot3_example:/home/kaveh/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/kaveh/ros2_ws/install/rplidar_ros:/home/kaveh/turtlebot3_ws/install/turtlebot3:/home/kaveh/turtlebot3_ws/install/turtlebot3_bringup:/home/kaveh/turtlebot3_ws/install/turtlebot3_node:/home/kaveh/turtlebot3_ws/install/turtlebot3_description:/home/kaveh/turtlebot3_ws/install/ld08_driver'}, 'shell': False}
+[3.116871] (-) TimerEvent: {}
+[3.217578] (-) TimerEvent: {}
+[3.318178] (-) TimerEvent: {}
+[3.418849] (-) TimerEvent: {}
+[3.519721] (-) TimerEvent: {}
+[3.620328] (-) TimerEvent: {}
+[3.720965] (-) TimerEvent: {}
+[3.821583] (-) TimerEvent: {}
+[3.922302] (-) TimerEvent: {}
+[4.022926] (-) TimerEvent: {}
+[4.123546] (-) TimerEvent: {}
+[4.224210] (-) TimerEvent: {}
+[4.324839] (-) TimerEvent: {}
+[4.377306] (diffbot_pi) StdoutLine: {'line': b'running develop\n'}
+[4.424994] (-) TimerEvent: {}
+[4.525604] (-) TimerEvent: {}
+[4.626220] (-) TimerEvent: {}
+[4.726851] (-) TimerEvent: {}
+[4.827453] (-) TimerEvent: {}
+[4.928062] (-) TimerEvent: {}
+[5.028696] (-) TimerEvent: {}
+[5.129318] (-) TimerEvent: {}
+[5.151976] (diffbot_pi) StdoutLine: {'line': b'running egg_info\n'}
+[5.152576] (diffbot_pi) StdoutLine: {'line': b'creating diffbot_pi.egg-info\n'}
+[5.153178] (diffbot_pi) StdoutLine: {'line': b'writing diffbot_pi.egg-info/PKG-INFO\n'}
+[5.154108] (diffbot_pi) StdoutLine: {'line': b'writing dependency_links to diffbot_pi.egg-info/dependency_links.txt\n'}
+[5.154754] (diffbot_pi) StdoutLine: {'line': b'writing entry points to diffbot_pi.egg-info/entry_points.txt\n'}
+[5.155316] (diffbot_pi) StdoutLine: {'line': b'writing requirements to diffbot_pi.egg-info/requires.txt\n'}
+[5.155861] (diffbot_pi) StdoutLine: {'line': b'writing top-level names to diffbot_pi.egg-info/top_level.txt\n'}
+[5.156813] (diffbot_pi) StdoutLine: {'line': b"writing manifest file 'diffbot_pi.egg-info/SOURCES.txt'\n"}
+[5.164122] (diffbot_pi) StdoutLine: {'line': b"reading manifest file 'diffbot_pi.egg-info/SOURCES.txt'\n"}
+[5.167134] (diffbot_pi) StdoutLine: {'line': b"writing manifest file 'diffbot_pi.egg-info/SOURCES.txt'\n"}
+[5.174311] (diffbot_pi) StdoutLine: {'line': b'running build_ext\n'}
+[5.175178] (diffbot_pi) StdoutLine: {'line': b'Creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/python3.10/site-packages/diffbot-pi.egg-link (link to .)\n'}
+[5.178876] (diffbot_pi) StdoutLine: {'line': b'Installing base_controller script to /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/diffbot_pi\n'}
+[5.179744] (diffbot_pi) StdoutLine: {'line': b'Installing sonar script to /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/lib/diffbot_pi\n'}
+[5.180935] (diffbot_pi) StdoutLine: {'line': b'\n'}
+[5.181486] (diffbot_pi) StdoutLine: {'line': b'Installed /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi\n'}
+[5.181896] (diffbot_pi) StdoutLine: {'line': b'running symlink_data\n'}
+[5.182515] (diffbot_pi) StdoutLine: {'line': b'creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index\n'}
+[5.183007] (diffbot_pi) StdoutLine: {'line': b'creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index\n'}
+[5.183381] (diffbot_pi) StdoutLine: {'line': b'creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index/packages\n'}
+[5.183783] (diffbot_pi) StdoutLine: {'line': b'symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/resource/diffbot_pi -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/ament_index/resource_index/packages\n'}
+[5.184326] (diffbot_pi) StdoutLine: {'line': b'symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/package.xml -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi\n'}
+[5.184866] (diffbot_pi) StdoutLine: {'line': b'creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/launch\n'}
+[5.185372] (diffbot_pi) StdoutLine: {'line': b'symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/launch/robot.launch.py -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/launch\n'}
+[5.185860] (diffbot_pi) StdoutLine: {'line': b'creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/config\n'}
+[5.186345] (diffbot_pi) StdoutLine: {'line': b'symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/config/robot.yaml -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/config\n'}
+[5.186929] (diffbot_pi) StdoutLine: {'line': b'creating /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/urdf\n'}
+[5.187753] (diffbot_pi) StdoutLine: {'line': b'symbolically linking /home/kaveh/diffbot_ros2_workspace_humble/build/diffbot_pi/urdf/robot.urdf -> /home/kaveh/diffbot_ros2_workspace_humble/install/diffbot_pi/share/diffbot_pi/urdf\n'}
+[5.229623] (-) TimerEvent: {}
+[5.313690] (diffbot_pi) CommandEnded: {'returncode': 0}
+[5.329716] (-) TimerEvent: {}
+[5.369445] (diffbot_pi) JobEnded: {'identifier': 'diffbot_pi', 'rc': 0}
+[5.372074] (-) EventReactorShutdown: {}
