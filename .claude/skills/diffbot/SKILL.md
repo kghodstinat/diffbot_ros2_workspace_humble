@@ -113,6 +113,9 @@ Likely causes, most to least likely:
 3. IMU (BNO055/BNO085 on Pi I²C) + `robot_localization` EKF.
 4. Robot-specific Nav2 params (footprint, speeds); optionally sonar via Nav2 range sensor layer.
 
+**Study package built (2026-10-25):** `~/Downloads/diffbot_arduino_ws.zip` — firmware, `diffbot_hardware` (C++ plugin), `diffbot_bringup` (xacro, controllers.yaml, nav2_params.yaml, robot/lidar/navigation launch), `diffbot_sonar`. Untested. How it works + launch→Arduino chain: see HISTORY.md.
+Pi: `ros2 launch diffbot_bringup robot.launch.py` · Computer: `ros2 launch diffbot_bringup navigation.launch.py [slam:=false map:=~/my_map.yaml]`.
+
 Pi-only alternative if staying on GPIO: kernel `rotary-encoder` dtoverlay in `/boot/firmware/config.txt`, hardware-PWM pins (GPIO 12/13/18/19; current PWM pins 4/25 are software PWM).
 
 ### Nano wiring (L298N-style driver; ros_arduino_bridge defaults)
